@@ -12,8 +12,8 @@ public class CalculatorTest {
 
         assertThat(Calculator.calculatingDiscount(200.0, 10)).isEqualTo(180);
         assertThat(Calculator.calculatingDiscount(150.0, 0)).isEqualTo(150);
-        assertThat(Calculator.calculatingDiscount(150.0, -10));
-        assertThat(Calculator.calculatingDiscount(190.0, 100));
+        assertThat(Calculator.calculatingDiscount(150.0, -10)).isInstanceOf(IllegalAccessError.class);
+        assertThat(Calculator.calculatingDiscount(190.0, 100)).isInstanceOf(IllegalAccessError.class);
 
 
         // Проверка базового функционала с целыми числами:
