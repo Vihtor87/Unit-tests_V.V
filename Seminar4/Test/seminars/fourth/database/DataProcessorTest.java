@@ -12,7 +12,7 @@ import static org.mockito.Mockito.*;
 class DataProcessorTest {
 
     @Test
-    void checkDataSql() {
+    public void checkDataSql() {
         Database mockDatabase = mock(Database.class);
         when(mockDatabase.query(anyString())).thenReturn(Arrays.asList("fakeData1", "fakeData2", "fakeData1"));
 
